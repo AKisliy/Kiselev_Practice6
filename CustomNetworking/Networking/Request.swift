@@ -22,7 +22,7 @@ struct Request{
     let body: Data?
     
     init(endpoint: Endpoint,
-         method: Request.RequestMethod,
+         method: Request.RequestMethod = .get,
          parameters: RequestParameters? = nil,
          body: Data? = nil
     ){

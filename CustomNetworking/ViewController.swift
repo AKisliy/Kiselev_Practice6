@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        ToDoWorker().fetchTodos{ todo in
-            
+        ArticlesWorker().fetchNews(page: 0){ result in
+            print(result)
         }
     }
 
